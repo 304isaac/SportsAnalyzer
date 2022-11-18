@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.AppGlass {
+  display: flex;
+  height: 98.3%;
+  width: 99%;
+  border-radius: 20px;
+  background-color: rgb(38, 42, 43);
+  overflow: hidden;
+  grid-template-columns: 11rem auto 20rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(49, 53, 54);
+  overflow: hidden;
+  overflow-y: auto;
+  position: fixed;
+}
+
+.AppGlass::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: grid;
+  width: 100%;
+}

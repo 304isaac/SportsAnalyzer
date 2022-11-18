@@ -1,0 +1,181 @@
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: -10px;
+    transition: all 300ms ease;
+    justify-content: center;
+    height: 100%;
+    width: 225px;
+    background-color: rgb(27, 30, 31);
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+    padding-bottom: 50px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo a:hover {
+    color:rgb(192, 132, 1);
+    transition-duration: 0.4s;
+}
+
+
+.menu {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: contents;
+}
+
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    text-overflow: clip;
+    transition: all 300ms ease;
+    width:225px;
+    height:62px
+}
+
+.menuItem:hover{
+    background-color: rgb(20, 22, 22);
+    float: left;
+    border-radius: 8px;
+    width:300px;
+    margin-left:-15px;
+    height:62px;
+    transition-duration: 0.4s;
+    padding-left: 7px;
+}
+
+.dropDownMenu:hover ul {
+    color: white;
+}
+
+.itemLogo {
+   margin-top: 4.2px;
+}
+
+.menuItem h1 {
+    font-size: 20px;
+}
+
+.SideBarList li{
+    display: flex;
+    width: 225px;
+    height: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li:hover {
+    text-decoration: none;
+    color: rgb(192, 132, 1);
+}
+
+.active {
+    background: var(--activeItem);
+    margin-left: 0;
+}
+
+.logoIcon {
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+}
+
+.dropDownMenu {
+    position: relative;
+    padding: 0px 5px;
+}
+
+.dropDownMenu::before {
+    position: absolute;
+}
+
+.dropDownMenu.active{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+}
+
+
+.dropDownMenu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.toggleMenu h1 {
+    font-size: inherit;
+    padding-left: 30px;
+}
+
+
+.toggleMenu:hover {
+    color: rgb(192, 132, 1);
+    cursor: pointer;
+}
+
+.dropDownLogo {
+    margin-left: -14px;
+    height: 35px;
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.toggleMenu {
+    display: flex;
+    margin-left: 5px;
+}
+
+.dropDownItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+    text-overflow: clip;
+    transition: all 300ms ease;
+    width:225px;
+    height:40px;
+    font-size: 9px;
+}
+
+.dropDownItem:hover {
+    background-color: rgb(20, 22, 22);
+    float: left;
+    border-radius: 8px;
+    width:300px;
+    margin-left:-15px;
+    height:40px;
+    transition-duration: 0.4s;
+    padding-left: 7px;
+}
