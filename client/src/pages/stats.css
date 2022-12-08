@@ -9,7 +9,15 @@
 .dataTable td {
     text-align: center;
     justify-content: center;
-    border: 1px solid black;
+    padding-left: 8px;
+}
+
+.dataTable td:hover{
+    border: none;
+}
+
+.dataTable.teamName:hover {
+    border: inherit;
 }
     
 .dataTable th {
@@ -18,13 +26,13 @@
 }
 
 table {
-    border: 1px solid black;
+    border: 1px solid white;
     border-collapse: collapse;
-    table-layout: inherit;
-    width: 80%;
+    table-layout: inherit;  
+    width: 70%;
 }
 
-.dataTable {
+.wrapper {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -35,9 +43,7 @@ table {
     border-top-left-radius: 10px;
     font-weight: bold;
     background-color: rgb(192, 132, 1);
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 2px solid black;
+    border: 1px solid white;
     font-size: 18px;
 }
 
@@ -51,7 +57,23 @@ table {
     text-decoration: none;
 }
 
-.dataTable td:hover{
+
+.dataTable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    border: 1px solid white;
+    white-space: nowrap;
+}
+
+.dataTable thead {
+    border: 1px solid white;
+}
+
+.dataTable tr {
+    line-height: 18px;
+}
+
+.teamName:hover{
     border: inherit;
-    border-left: 1px solid black;
 }

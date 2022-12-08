@@ -2,7 +2,9 @@ import React from 'react'
 import './Sidebar.css'
 //import Logo from '/imgs/logo.png'
 import { Link } from "react-router-dom"
-import {UilEstate, UilSearch, UilFootballAmerican, UilBasketball, UilChartBar, UilPlay, UilExclamationTriangle, UilChartLine, UilPadlock, UilAngleDown} from "@iconscout/react-unicons";
+import {UilEstate, UilSearch, UilFootballAmerican, UilBasketball, 
+        UilChartBar, UilPlay, UilExclamationTriangle, UilChartLine, 
+        UilPadlock, UilAngleDown, UilSignInAlt} from "@iconscout/react-unicons";
 import { useState } from 'react';
 
 
@@ -107,8 +109,6 @@ const Sidebar = () => {
 
                     <li>
 
-
-
                         <div className="menuContainer">
                             <div className="toggleMenu">
                                 <div className="menuItem" onClick={() => {setOpen(!open)}}>
@@ -178,7 +178,22 @@ const Sidebar = () => {
 
                             </div>
                         </div>
-                        </li>
+                    </li>
+
+
+                    <li className="loginButton">
+                        <Link to="/login">
+                            <div className="menuItem">
+
+                                <div className="itemLogo">
+                                    <UilSignInAlt/>
+                                </div>
+
+                                <span><h1>Register/Login</h1></span>
+                            </div>
+                        </Link>
+                    </li>
+
                     </ul>
                     
                     {/*
@@ -345,7 +360,6 @@ const Sidebar = () => {
 
 
             </div>
-
         </div>
 
 

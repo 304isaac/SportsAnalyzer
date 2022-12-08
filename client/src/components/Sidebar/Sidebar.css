@@ -5,10 +5,18 @@
     padding-top: -10px;
     transition: all 300ms ease;
     justify-content: center;
+    align-items: left;
     height: 100%;
     width: 225px;
     background-color: rgb(27, 30, 31);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: relative;
+    border-right: 3px solid rgb(49, 53, 54);
+}
+
+.Sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .logo {
@@ -20,6 +28,7 @@
     justify-content: center;
     height: 4%;
     padding-bottom: 50px;
+    margin-top: -120px;
 }
 
 .logo a {
@@ -37,7 +46,7 @@
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     font-size: 20px;
     font-weight: bold;
     margin-left: 15px;
@@ -69,6 +78,7 @@
     height:62px;
     transition-duration: 0.4s;
     padding-left: 7px;
+    width: 2000%;
 }
 
 .dropDownMenu:hover ul {
@@ -112,7 +122,8 @@
 
 .dropDownMenu {
     position: relative;
-    padding: 0px 5px;
+    padding: 0px 20px;
+    margin-top: -8px;
 }
 
 .dropDownMenu::before {
@@ -178,4 +189,9 @@
     height:40px;
     transition-duration: 0.4s;
     padding-left: 7px;
+}
+
+.loginButton{
+    position: absolute;
+    margin-top: 585px;
 }

@@ -10,7 +10,7 @@ function Nba() {
     const [west, setWest] = useState([]);
 
     const loadWest = async () => {
-        const response = await axios.get("http://localhost:3001/api/get/west/standings")
+        const response = await axios.get("http://localhost:3001/api/get/west/standings");
         setWest(response.data);
     };
 
@@ -21,7 +21,7 @@ function Nba() {
     const [east, setEast] = useState([]);
 
     const loadEast = async () => {
-        const response = await axios.get("http://localhost:3001/api/get/east/standings")
+        const response = await axios.get("http://localhost:3001/api/get/east/standings");
         setEast(response.data);
     }
     
@@ -34,9 +34,12 @@ function Nba() {
             <h1>NBA</h1>
 
             <div className="standings">
-                <h1>Current Standings</h1>
+                <caption className="standingsCaption">
+                    Current Standings
+                </caption>
 
-                <div className="container">
+
+                
                     <table className="westStandings">
                         <caption>West Standings</caption>
                         <thead>
@@ -54,7 +57,7 @@ function Nba() {
                             return (
                             <tr key={item.index}>
                                 <th scope="row">{index+1}</th>
-                                <td className="teamName"><Link to={"/view/" + item.Team}>{item.Team}</Link></td>
+                                <td className="teamName"><Link to={"/view/" + item.teamName}>{item.teamName}</Link></td>
                                 <td>{item.W}</td>
                                 <td>{item.L}</td>
                                 <td>{item.winPCT}</td>
@@ -63,10 +66,10 @@ function Nba() {
                         })}
                         </tbody>
                     </table>
-                </div>
                 
-                <div className="container">
-                <table className="eastStandings">
+                
+                
+                    <table className="eastStandings">
                         <caption>East Standings</caption>
                         <thead>
                             <tr>
@@ -83,7 +86,7 @@ function Nba() {
                             return (
                             <tr key={item.index}>
                                 <th scope="row">{index+1}</th>
-                                <td className="teamName"><Link to={"/view/" + item.Team}>{item.Team}</Link></td>
+                                <td className="teamName"><Link to={"/view/" + item.teamName}>{item.teamName}</Link></td>
                                 <td>{item.W}</td>
                                 <td>{item.L}</td>
                                 <td>{item.winPCT}</td>
@@ -92,7 +95,8 @@ function Nba() {
                         })}
                         </tbody>
                     </table>
-                </div>
+                   
+                <footer>Footer</footer>
             </div>
         </div>
 

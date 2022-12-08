@@ -1,0 +1,77 @@
+.matchups {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.matchupCard {
+    height: 150px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(192, 132, 1);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: rgb(27, 30, 31);
+    box-shadow: 0px 0px 3px 3px black;
+}
+
+.homeTeam {
+    float: left;
+    width: 25%; 
+    text-align: left;
+    margin-left: 10px;
+}
+
+.awayTeam {
+    float: right;
+    width: 25%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+.home {
+    float: left;
+    margin-left: 30px;
+}
+
+.away {
+    float: right;
+    margin-right: 30px;
+}
+
+.location{
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(145, 145, 145);
+    font-weight: bolder;
+}
+
+.middle {
+    width: 100%;
+    text-align: center;
+    position: sticky;
+}
+
+.dateTime {
+    font-size: 20px;
+}
+
+.time {
+    font-size: 13px;
+    color: rgb(192, 132, 1);
+}
+
+
+.pickButton.active{
+
+    opacity: 1;
+    visibility: visible;
+}
+
+.pickButton.inactive{
+    opacity: 0;
+    visibility: hidden;
+}

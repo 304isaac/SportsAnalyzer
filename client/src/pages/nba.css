@@ -3,44 +3,59 @@
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    overflow: visible;
     display: inline-table;
 }
 
-
 .standings table{
-    background-color: rgb(35, 36, 36);
-    table-layout: auto;
+    background-color: rgb(27, 30, 31);
     text-align: center;
-    width: 49%;
     border-top: none;
+    border-collapse: collapse;
 }
 
 .westStandings {
+    width: 50%;
     float: left;
+    border: 1px solid white;
+    border-bottom: none;
+    border-right: none;
+    white-space: nowrap;
+}
+
+.westStandings td {
+    padding-left: 10px;
+}
+
+.eastStandings td {
+    padding-left: 10px;
 }
 
 .eastStandings {
+    width: 50%;
     float: right;
+    border: 1px solid white;
+    border-bottom: none;
+    border-left: none;
+    white-space: nowrap;
 }
 
 .eastStandings caption {
     background-color: rgb(50, 98, 255);
     font-weight: bold;
-    border: 2px solid black;
+    border-right: 1px solid white;
     color: white;
 }
 
 .westStandings caption {
     background-color: rgba(255, 28, 28, 0.774);
     font-weight: bold;
-    border: 2px solid black;
+    border-left: 1px solid white;
     color: white;
 }
 
-.teamName:hover {
-    border: 1px solid white;
+.standings.teamName:hover {
     cursor: pointer;
+    box-shadow: 0 0 0 1px white;
 }
 
 .teamName a {
@@ -48,10 +63,34 @@
     color: inherit;
 }
 
-.westStandings .teamName:hover {
+.westStandings a:hover {
     color:rgba(255, 28, 28, 0.774);
 }
 
-.eastStandings .teamName:hover {
+.eastStandings a:hover {
     color: rgb(50, 98, 255);
+}
+
+.standingsCaption {
+    background-color: rgb(27, 30, 31);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 1px solid white;
+}
+
+.standings footer {
+    background-color: rgb(27, 30, 31);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 2px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    color: rgb(27, 30, 31);
 }

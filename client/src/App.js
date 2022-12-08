@@ -13,17 +13,18 @@ import NCAAM from "./pages/ncaam"
 import NBA from "./pages/nba"
 import NFL from "./pages/nfl"
 import View from "./pages/View"
+import Login from "./components/Login"
+import Signup from "./components/Signup";
 
 
 
 
 function App() {
-
   return (
-    <div className="App">
+    <div className="App">   
       <div className="AppGlass">
-
         <Sidebar />
+
         
 
           <div className="content">
@@ -39,7 +40,10 @@ function App() {
               <Route path="/ncaaf" element={<NCAAF />} />
               <Route path="/ncaam" element={<NCAAM />} />
               <Route path="/search/:repo" element={ <Search />} />
-              <Route path="/view/:team" element={ <View />} />
+              <Route path="/view/:repo" element={ <View />} />
+              <Route path="/login" element={ <Login />} />
+              <Route path="/signup" element={ <Signup />} />
+              <Route path="/login/:repo" element={ <Login />} />
             </Routes>
           </div>
 

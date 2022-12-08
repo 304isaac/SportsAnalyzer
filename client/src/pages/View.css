@@ -1,0 +1,155 @@
+
+.starters table {
+    background-color: rgb(38, 42, 43);
+    border-collapse: collapse;
+    white-space: nowrap;
+    width: 15%;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 8px;
+}
+
+.starters table td {
+    text-align: right;
+    padding-right: 5px;
+}
+
+.starters caption {
+    border: 1px solid white;
+    background-color: rgb(192, 132, 1);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.playerStats tr {
+    line-height: 18px;
+}
+
+.teamHeading {
+    float:left;
+    text-align: left;
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+}
+
+.teamHeading p{
+    margin-top: -10px;
+    margin-left: 4%;
+    font-size: 30px;
+    color:rgb(192, 132, 1);
+    
+}
+
+.teamHeading h1 {
+    font-size: 40px;
+    margin-left: 4%;
+    color: white;
+    margin-top: 5px;
+}
+
+.infoBar{
+    width: 100%;
+    background-color: rgb(27, 30, 31);
+    height: 160px;
+    display: flex;
+    margin-top: auto;
+    position: relative;
+    border: 2px solid rgb(49, 53, 54);
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-left: none;
+}
+
+.teamStats h1, p{
+    float: left;
+    display: grid;
+}
+
+.starters {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    line-height: 10px;
+}
+
+.wrapper {
+    margin-top: 0px;
+}
+
+
+.playerStats {
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.playerStats table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 35%;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.starters table th {
+    padding: 8px;
+}
+
+
+.playerStats caption {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(192, 132, 1);
+    border: 1px solid white;
+    font-size: 18px;
+}
+
+.playerStats td, th{
+    padding-left: 8px;
+    text-align: left;
+}
+
+.teamStats {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.offense {
+    width: 50%;
+    float: left;
+    align-items: center;
+    text-align: center;
+}
+
+.defense {
+    width: 50%;
+    float: right;
+    align-items: center;
+    text-align: center;
+}
+
+.offense h1{
+    margin-left: 35%;
+}
+
+.defense h1{
+    margin-left: 50%;
+}
+
+.teamStats.defense{
+    float: right;
+}
+
+.teamStats.offense{
+    float: left;
+}
