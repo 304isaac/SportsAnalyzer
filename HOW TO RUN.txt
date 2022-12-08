@@ -1,2 +1,0 @@
-running the 'npm start' command in the client folder will open the frontend
-running the 'npm start' command in the server folder will connect to the database and run the backend
